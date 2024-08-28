@@ -1,0 +1,218 @@
+/* font */
+@import url(https://db.onlinewebfonts.com/c/c935c99319b6455292ddb654ceeeb237?family=Gainsborough);
+
+/* variables */
+:root {
+    --main-bg-color: #383850;
+    --main-text-color: #ffffff;
+    --main-text-size: 16pt;
+}
+
+/* body */
+
+body {
+    --bg-width: 60%;
+    --bg-height: 90%;
+
+    background: var(--main-bg-color) url(assets/background.jpg) no-repeat fixed center center;
+    -webkit-background-size: var(--bg-width) var(--bg-height);
+    -moz-background-size: var(--bg-width) var(--bg-height);
+    -o-background-size: var(--bg-width) var(--bg-height);
+    background-size: var(--bg-width) var(--bg-height);
+
+    color: var(--main-text-color);
+    font-size: var(--main-text-size);
+
+    position: relative;
+    text-align: center;
+
+    font-family: "Gainsborough", serif;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+.param {
+    position: absolute;
+
+    --bottom-offset: calc(var(--bg-width) - calc(var(--main-text-size) / 2));
+    --left-offset: calc(var(--bg-height) - calc(var(--main-text-size) / 2) - .2%);
+
+    /*background-color: red;*/
+}
+
+.vertical {
+    rotate: -90deg;
+}
+
+/* params position */
+
+#lm_rpm {
+    bottom: calc(var(--bottom-offset) - 50%);
+    left: calc(var(--left-offset) - 66.75%);
+    width: 12%;
+}
+
+#rm_rpm {
+    bottom: calc(var(--bottom-offset) - 50%);
+    left: calc(var(--left-offset) - 23.8%);
+    width: 12.6%;
+}
+
+#ecu_po_ver {
+    bottom: calc(var(--bottom-offset) - 44.5%);
+    left: calc(var(--left-offset) - 45.5%);
+    width: 11.8%;
+}
+
+/* --------- */
+
+#ecu_rpm {
+    bottom: calc(var(--bottom-offset) - 22.5%);
+    left: calc(var(--left-offset) - 45.5%);
+    width: 12%;
+}
+
+#ecu_cooltemp {
+    bottom: calc(var(--bottom-offset) - 26%);
+    left: calc(var(--left-offset) - 45.5%);
+    width: 12%;
+}
+
+#m_power {
+    bottom: calc(var(--bottom-offset) - 29.5%);
+    left: calc(var(--left-offset) - 45.5%);
+    width: 12%
+}
+
+/* --------- */
+
+#clutch_on {
+    bottom: calc(var(--bottom-offset) - 12%);
+    left: calc(var(--left-offset) - 49%);
+    width: 8.5%;
+}
+
+#clutch_time {
+    bottom: calc(var(--bottom-offset) - 12%);
+    left: calc(var(--left-offset) - 39%);
+    width: 8.5%;
+}
+
+/* --------- */
+
+#lp_power {
+    bottom: calc(var(--bottom-offset) + 2%);
+    left: calc(var(--left-offset) - 49%);
+    width: 7%;
+}
+
+#lp_com {
+    bottom: calc(var(--bottom-offset) - 2%);
+    left: calc(var(--left-offset) - 49%);
+    width: 7%;
+}
+
+#lp_pos {
+    bottom: calc(var(--bottom-offset) - 6%);
+    left: calc(var(--left-offset) - 49%);
+    width: 7%;
+}
+
+/* --------- */
+
+#rp_power {
+    bottom: calc(var(--bottom-offset) + 2%);
+    left: calc(var(--left-offset) - 37.5%);
+    width: 7%;
+}
+
+#rp_com {
+    bottom: calc(var(--bottom-offset) - 2%);
+    left: calc(var(--left-offset) - 37.5%);
+    width: 7%;
+}
+
+#rp_pos {
+    bottom: calc(var(--bottom-offset) - 6%);
+    left: calc(var(--left-offset) - 37.5%);
+    width: 7%;
+}
+
+/* --------- */
+
+#lp_step_count {
+    bottom: calc(var(--bottom-offset) + 9.5%);
+    left: calc(var(--left-offset) - 53.8%);
+    width: 11.8%;
+}
+
+#rp_step_count {
+    bottom: calc(var(--bottom-offset) + 9.5%);
+    left: calc(var(--left-offset) - 37.6%);
+    width: 11.8%;
+}
+
+/* --------- */
+
+#lmb_hydr_press {
+    bottom: calc(var(--bottom-offset) - 23%);
+    left: calc(var(--left-offset) - 67.75%);
+    width: 18%;
+}
+
+#lma_hydr_press {
+    bottom: calc(var(--bottom-offset) - 23%);
+    left: calc(var(--left-offset) - 65.15%);
+    width: 18%;
+}
+
+/* --------- */
+
+#rmb_hydr_press {
+    bottom: calc(var(--bottom-offset) - 22%);
+    left: calc(var(--left-offset) - 31.65%);
+    width: 18%;
+}
+
+#rma_hydr_press {
+    bottom: calc(var(--bottom-offset) - 22%);
+    left: calc(var(--left-offset) - 29%);
+    width: 18%;
+}
+
+/* --------- */
+
+#pump_rpm {
+    bottom: calc(var(--bottom-offset) + 6%);
+    left: calc(var(--left-offset) - 43.8%);
+    width: 8%;
+}
+
+/* --------- */
+
+#lp_1 {
+    bottom: calc(var(--bottom-offset) + 23%);
+    left: calc(var(--left-offset) - 57.9%);
+    width: 9.5%;
+}
+
+#lp_2 {
+    bottom: calc(var(--bottom-offset) + 23%);
+    left: calc(var(--left-offset) - 49.7%);
+    width: 9.5%;
+}
+
+/* --------- */
+
+#rp_1 {
+    bottom: calc(var(--bottom-offset) + 23%);
+    left: calc(var(--left-offset) - 39.45%);
+    width: 9.5%;
+}
+
+#rp_2 {
+    bottom: calc(var(--bottom-offset) + 23%);
+    left: calc(var(--left-offset) - 31.25%);
+    width: 9.5%;
+}

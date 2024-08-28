@@ -1,27 +1,17 @@
 /* font */
 @import url(https://db.onlinewebfonts.com/c/c935c99319b6455292ddb654ceeeb237?family=Gainsborough);
 
-/* variables */
-:root {
-    --main-bg-color: #383850;
-    --main-text-color: #ffffff;
-    --main-text-size: 16pt;
-}
-
 /* body */
 
 body {
-    --bg-width: 60%;
-    --bg-height: 90%;
+    background: #383850 url(assets/background.jpg) no-repeat fixed center center;
+    -webkit-background-size: 70% 90%;
+    -moz-background-size: 70% 90%;
+    -o-background-size: 70% 90%;
+    background-size: 70% 90%;
 
-    background: var(--main-bg-color) url(assets/background.jpg) no-repeat fixed center center;
-    -webkit-background-size: var(--bg-width) var(--bg-height);
-    -moz-background-size: var(--bg-width) var(--bg-height);
-    -o-background-size: var(--bg-width) var(--bg-height);
-    background-size: var(--bg-width) var(--bg-height);
-
-    color: var(--main-text-color);
-    font-size: var(--main-text-size);
+    color: #ffffff;
+    font-size: 2.5vmin;
 
     position: relative;
     text-align: center;
@@ -34,185 +24,212 @@ body {
 
 .param {
     position: absolute;
-
-    --bottom-offset: calc(var(--bg-width) - calc(var(--main-text-size) / 2));
-    --left-offset: calc(var(--bg-height) - calc(var(--main-text-size) / 2) - .2%);
-
-    /*background-color: red;*/
 }
 
 .vertical {
-    rotate: -90deg;
+    transform: rotate(270deg);
 }
 
 /* params position */
 
 #lm_rpm {
-    bottom: calc(var(--bottom-offset) - 50%);
-    left: calc(var(--left-offset) - 66.75%);
-    width: 12%;
+    bottom: 8.5%;
+    left: 18%;
+    width: 13.9%;
+    min-height: 3.9%;
+    line-height: 3.9vh;
 }
 
 #rm_rpm {
-    bottom: calc(var(--bottom-offset) - 50%);
-    left: calc(var(--left-offset) - 23.8%);
-    width: 12.6%;
+    bottom: 8.5%;
+    left: 68%;
+    width: 14.8%;
+    min-height: 3.9%;
+    line-height: 3.9vh;
 }
 
 #ecu_po_ver {
-    bottom: calc(var(--bottom-offset) - 44.5%);
-    left: calc(var(--left-offset) - 45.5%);
-    width: 11.8%;
+    bottom: 14%;
+    left: 42.7%;
+    width: 13.9%;
+    min-height: 3.9%;
+    line-height: 3.9vh;
 }
 
 /* --------- */
 
 #ecu_rpm {
-    bottom: calc(var(--bottom-offset) - 22.5%);
-    left: calc(var(--left-offset) - 45.5%);
-    width: 12%;
+    top: 54.65%;
+    left: 42.65%;
+    width: 14.1%;
+    min-height: 6.65%;
+    line-height: 6vh;
 }
 
 #ecu_cooltemp {
-    bottom: calc(var(--bottom-offset) - 26%);
-    left: calc(var(--left-offset) - 45.5%);
-    width: 12%;
+    top: 61.315%;
+    left: 42.65%;
+    width: 14.1%;
+    min-height: 6.65%;
+    line-height: 6vh;
 }
 
 #m_power {
-    bottom: calc(var(--bottom-offset) - 29.5%);
-    left: calc(var(--left-offset) - 45.5%);
-    width: 12%
+    top: 68.1%;
+    left: 42.65%;
+    width: 14.1%;
+    min-height: 6.65%;
+    line-height: 6vh;
 }
 
 /* --------- */
 
 #clutch_on {
-    bottom: calc(var(--bottom-offset) - 12%);
-    left: calc(var(--left-offset) - 49%);
-    width: 8.5%;
+    top: 49.3%;
+    left: 38.3%;
+    width: 11.1%;
+    min-height: 4.85%;
+    line-height: 5vh;
 }
 
 #clutch_time {
-    bottom: calc(var(--bottom-offset) - 12%);
-    left: calc(var(--left-offset) - 39%);
-    width: 8.5%;
+    top: 49.3%;
+    left: 49.4%;
+    width: 11.1%;
+    min-height: 4.85%;
+    line-height: 5vh;
 }
 
 /* --------- */
 
 #lp_power {
-    bottom: calc(var(--bottom-offset) + 2%);
-    left: calc(var(--left-offset) - 49%);
-    width: 7%;
+    top: 33.85%;
+    left: 38.35%;
+    width: 8.7%;
+    min-height: 5%;
+    line-height: 5vh;
 }
 
 #lp_com {
-    bottom: calc(var(--bottom-offset) - 2%);
-    left: calc(var(--left-offset) - 49%);
-    width: 7%;
+    top: 38.85%;
+    left: 38.35%;
+    width: 8.7%;
+    min-height: 5%;
+    line-height: 5vh;
 }
 
 #lp_pos {
-    bottom: calc(var(--bottom-offset) - 6%);
-    left: calc(var(--left-offset) - 49%);
-    width: 7%;
+    top: 43.85%;
+    left: 38.35%;
+    width: 8.7%;
+    min-height: 5%;
+    line-height: 5vh;
 }
 
 /* --------- */
 
 #rp_power {
-    bottom: calc(var(--bottom-offset) + 2%);
-    left: calc(var(--left-offset) - 37.5%);
-    width: 7%;
+    top: 33.85%;
+    left: 51.75%;
+    width: 8.7%;
+    min-height: 5%;
+    line-height: 5vh;
 }
 
 #rp_com {
-    bottom: calc(var(--bottom-offset) - 2%);
-    left: calc(var(--left-offset) - 37.5%);
-    width: 7%;
+    top: 38.85%;
+    left: 51.75%;
+    width: 8.7%;
+    min-height: 5%;
+    line-height: 5vh;
 }
 
 #rp_pos {
-    bottom: calc(var(--bottom-offset) - 6%);
-    left: calc(var(--left-offset) - 37.5%);
-    width: 7%;
+    top: 43.85%;
+    left: 51.75%;
+    width: 8.7%;
+    min-height: 5%;
+    line-height: 5vh;
 }
 
 /* --------- */
 
 #lp_step_count {
-    bottom: calc(var(--bottom-offset) + 9.5%);
-    left: calc(var(--left-offset) - 53.8%);
-    width: 11.8%;
+    top: 27.1%;
+    left: 32.9%;
+    width: 14.1%;
+    min-height: 6%;
+    line-height: 6vh;
 }
 
 #rp_step_count {
-    bottom: calc(var(--bottom-offset) + 9.5%);
-    left: calc(var(--left-offset) - 37.6%);
-    width: 11.8%;
+    top: 27.1%;
+    left: 51.75%;
+    width: 14.1%;
+    min-height: 6%;
+    line-height: 6vh;
 }
 
 /* --------- */
 
 #lmb_hydr_press {
-    bottom: calc(var(--bottom-offset) - 23%);
-    left: calc(var(--left-offset) - 67.75%);
-    width: 18%;
+    bottom: 36%;
+    left: 17.85%;
+    width: 19%;
 }
 
 #lma_hydr_press {
-    bottom: calc(var(--bottom-offset) - 23%);
-    left: calc(var(--left-offset) - 65.15%);
-    width: 18%;
+    bottom: 36%;
+    left: 20.95%;
+    width: 19%;
 }
 
 /* --------- */
 
 #rmb_hydr_press {
-    bottom: calc(var(--bottom-offset) - 22%);
-    left: calc(var(--left-offset) - 31.65%);
-    width: 18%;
+    bottom: 37%;
+    left: 59.95%;
+    width: 19%;
 }
 
 #rma_hydr_press {
-    bottom: calc(var(--bottom-offset) - 22%);
-    left: calc(var(--left-offset) - 29%);
-    width: 18%;
+    bottom: 37%;
+    left: 63%;
+    width: 19%;
 }
 
 /* --------- */
 
 #pump_rpm {
-    bottom: calc(var(--bottom-offset) + 6%);
-    left: calc(var(--left-offset) - 43.8%);
-    width: 8%;
+    top: 32.15%;
+    left: 45%;
+    width: 9%;
 }
 
 /* --------- */
 
 #lp_1 {
-    bottom: calc(var(--bottom-offset) + 23%);
-    left: calc(var(--left-offset) - 57.9%);
-    width: 9.5%;
+    top: 15%;
+    left: 28.85%;
+    width: 10%;
 }
 
 #lp_2 {
-    bottom: calc(var(--bottom-offset) + 23%);
-    left: calc(var(--left-offset) - 49.7%);
-    width: 9.5%;
+    top: 15%;
+    left: 38.4%;
+    width: 10%;
 }
 
 /* --------- */
 
 #rp_1 {
-    bottom: calc(var(--bottom-offset) + 23%);
-    left: calc(var(--left-offset) - 39.45%);
-    width: 9.5%;
+    top: 15%;
+    left: 50.4%;
+    width: 10%;
 }
 
 #rp_2 {
-    bottom: calc(var(--bottom-offset) + 23%);
-    left: calc(var(--left-offset) - 31.25%);
-    width: 9.5%;
+    top: 15%;
+    left: 60%;
+    width: 10%;
 }
